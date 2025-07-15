@@ -1,1 +1,11 @@
-body { font-family: sans-serif; background: #f0f0f0; }
+@import 'variables';
+@import 'colors';
+@import 'buttons';
+
+:root {
+    font-family: "Inter", sans-serif;
+  }
+
+h1 {
+  color: var(--semantic-purple-200);
+}
