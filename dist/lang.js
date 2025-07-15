@@ -48,15 +48,27 @@
     document.querySelector('[data-i18n="footer.copyright"]').textContent = t.footer.copyright;
     document.querySelector('[data-i18n="main.greeting"]').textContent = t.main.greeting;
   }
-  document.addEventListener("DOMContentLoaded", () => {
+  function initLangSelect() {
     const lang = getLanguage();
     applyTranslations(lang);
-    const langSelect = document.getElementById("lang-select");
-    if (langSelect) {
-      langSelect.value = lang;
-      langSelect.addEventListener("change", (e) => {
-        setLanguage(e.target.value);
-      });
+    function tryAttach() {
+      const langSelect = document.getElementById("lang-select");
+      if (langSelect) {
+        langSelect.value = lang;
+        langSelect.addEventListener("change", (e) => {
+          setLanguage(e.target.value);
+        });
+        return true;
+      }
+      return false;
     }
-  });
+    if (!tryAttach()) {
+      const observer = new MutationObserver(() => {
+        if (tryAttach())
+          observer.disconnect();
+      });
+      observer.observe(document.body, { childList: true, subtree: true });
+    }
+  }
+  document.addEventListener("DOMContentLoaded", initLangSelect);
 })();
