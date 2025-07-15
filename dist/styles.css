@@ -1,4 +1,5 @@
 :root {
+  --base-transparent-white: rgba(255, 255, 255, 0);
   --text-heading-primary: var(--neutral-900);
   --text-body: var(--neutral-600);
   --text-heading-inverted: var(--base-white);
@@ -227,92 +228,36 @@
   --buttons-secondary-border-button-secondary-click: var(--brand-700);
   --buttons-secondary-border-button-secondary-disabled: var(--neutral-200);
   --buttons-tertiary-border-button-tertiary: var(--neutral-300);
-  --buttons-destructive-primary-fg-button-destructive-primary: var(
-    --base-white
-  );
+  --buttons-destructive-primary-fg-button-destructive-primary: var(--base-white);
   --buttons-destructive-primary-bg-button-destructive-primary: var(--error-600);
-  --buttons-destructive-primary-bg-button-destructive-primary-hover: var(
-    --error-700
-  );
-  --buttons-destructive-primary-bg-button-destructive-primary-click: var(
-    --error-800
-  );
-  --buttons-destructive-primary-bg-button-destructive-primary-disabled: var(
-    --neutral-100
-  );
-  --buttons-destructive-secondary-fg-button-destructive-secondary: var(
-    --error-600
-  );
-  --buttons-destructive-secondary-fg-button-destructive-secondary-hover: var(
-    --error-700
-  );
-  --buttons-destructive-secondary-border-button-destructive-secondary-click: var(
-    --error-800
-  );
-  --buttons-destructive-secondary-border-button-destructive-secondary-disabled: var(
-    --neutral-200
-  );
-  --buttons-destructive-secondary-fg-button-destructive-secondary-click: var(
-    --error-800
-  );
-  --buttons-destructive-secondary-fg-button-destructive-secondary-disabled: var(
-    --neutral-400
-  );
-  --buttons-destructive-secondary-bg-button-destructive-secondary: var(
-    --base-white
-  );
-  --buttons-destructive-secondary-bg-button-destructive-secondary-hover: var(
-    --error-50
-  );
-  --buttons-destructive-secondary-bg-button-destructive-secondary-click: var(
-    --error-100
-  );
-  --buttons-destructive-secondary-bg-button-destructive-secondary-disabled: var(
-    --base-white
-  );
-  --buttons-destructive-secondary-border-button-destructive-secondary: var(
-    --error-600
-  );
-  --buttons-destructive-secondary-border-button-destructive-secondary-hover: var(
-    --error-700
-  );
-  --buttons-destructive-tertiary-fg-button-destructive-tertiary: var(
-    --error-600
-  );
-  --buttons-destructive-tertiary-fg-button-destructive-tertiary-hover: var(
-    --error-700
-  );
-  --buttons-destructive-tertiary-fg-button-destructive-tertiary-click: var(
-    --error-800
-  );
-  --buttons-destructive-tertiary-fg-button-destructive-tertiary-disabled: var(
-    --neutral-400
-  );
-  --buttons-destructive-tertiary-bg-button-destructive-tertiary: var(
-    --base-white
-  );
-  --buttons-destructive-tertiary-bg-button-destructive-tertiary-hover: var(
-    --error-50
-  );
-  --buttons-destructive-tertiary-bg-button-destructive-tertiary-click: var(
-    --error-100
-  );
-  --buttons-destructive-tertiary-bg-button-destructive-tertiary-disabled: var(
-    --base-white
-  );
-  --buttons-destructive-tertiary-border-button-destructive-tertiary: var(
-    --error-200
-  );
+  --buttons-destructive-primary-bg-button-destructive-primary-hover: var(--error-700);
+  --buttons-destructive-primary-bg-button-destructive-primary-click: var(--error-800);
+  --buttons-destructive-primary-bg-button-destructive-primary-disabled: var(--neutral-100);
+  --buttons-destructive-secondary-fg-button-destructive-secondary: var(--error-600);
+  --buttons-destructive-secondary-fg-button-destructive-secondary-hover: var(--error-700);
+  --buttons-destructive-secondary-border-button-destructive-secondary-click: var(--error-800);
+  --buttons-destructive-secondary-border-button-destructive-secondary-disabled: var(--neutral-200);
+  --buttons-destructive-secondary-fg-button-destructive-secondary-click: var(--error-800);
+  --buttons-destructive-secondary-fg-button-destructive-secondary-disabled: var(--neutral-400);
+  --buttons-destructive-secondary-bg-button-destructive-secondary: var(--base-white);
+  --buttons-destructive-secondary-bg-button-destructive-secondary-hover: var(--error-50);
+  --buttons-destructive-secondary-bg-button-destructive-secondary-click: var(--error-100);
+  --buttons-destructive-secondary-bg-button-destructive-secondary-disabled: var(--base-white);
+  --buttons-destructive-secondary-border-button-destructive-secondary: var(--error-600);
+  --buttons-destructive-secondary-border-button-destructive-secondary-hover: var(--error-700);
+  --buttons-destructive-tertiary-fg-button-destructive-tertiary: var(--error-600);
+  --buttons-destructive-tertiary-fg-button-destructive-tertiary-hover: var(--error-700);
+  --buttons-destructive-tertiary-fg-button-destructive-tertiary-click: var(--error-800);
+  --buttons-destructive-tertiary-fg-button-destructive-tertiary-disabled: var(--neutral-400);
+  --buttons-destructive-tertiary-bg-button-destructive-tertiary: var(--base-white);
+  --buttons-destructive-tertiary-bg-button-destructive-tertiary-hover: var(--error-50);
+  --buttons-destructive-tertiary-bg-button-destructive-tertiary-click: var(--error-100);
+  --buttons-destructive-tertiary-bg-button-destructive-tertiary-disabled: var(--base-white);
+  --buttons-destructive-tertiary-border-button-destructive-tertiary: var(--error-200);
   --buttons-destructive-link01-fg-button-destructive-link01: var(--error-600);
-  --buttons-destructive-link01-fg-button-destructive-link01-hover: var(
-    --error-700
-  );
-  --buttons-destructive-link01-fg-button-destructive-link01-click: var(
-    --error-800
-  );
-  --buttons-destructive-link01-fg-button-destructive-link01-disabled: var(
-    --neutral-400
-  );
+  --buttons-destructive-link01-fg-button-destructive-link01-hover: var(--error-700);
+  --buttons-destructive-link01-fg-button-destructive-link01-click: var(--error-800);
+  --buttons-destructive-link01-fg-button-destructive-link01-disabled: var(--neutral-400);
   --buttons-destructive-link01-bg-button-destructive-link01: var(--error-50);
   --text-disabled: var(--neutral-300);
   --border-border-disabled: var(--neutral-300);
@@ -334,9 +279,7 @@
   --mockups-desktop-mockup-outer-bg: var(--neutral-100);
   --mockups-mobile-mockup-border: var(--neutral-200);
   --mockups-mobile-mockup-bg: var(--base-white);
-  --buttons-destructive-primary-fg-button-destructive-primary-disabled: var(
-    --neutral-400
-  );
+  --buttons-destructive-primary-fg-button-destructive-primary-disabled: var(--neutral-400);
   --buttons-primary-fg-button-primary-disabled: var(--neutral-400);
   --neutral-950: #0b121f;
   --brand-950: #1e1b4b;
@@ -360,16 +303,10 @@
   --fuchsia-950: #4a044e;
   --pink-950: #500724;
   --rose-950: #4c0519;
-  --buttons-destructive-tertiary-border-button-destructive-tertiary-disabled: var(
-    --neutral-200
-  );
+  --buttons-destructive-tertiary-border-button-destructive-tertiary-disabled: var(--neutral-200);
   --buttons-tertiary-border-button-tertiary-disabled: var(--neutral-200);
-  --buttons-destructive-tertiary-border-button-destructive-tertiary-hover: var(
-    --error-300
-  );
-  --buttons-destructive-tertiary-border-button-destructive-tertiary-click: var(
-    --error-400
-  );
+  --buttons-destructive-tertiary-border-button-destructive-tertiary-hover: var(--error-300);
+  --buttons-destructive-tertiary-border-button-destructive-tertiary-click: var(--error-400);
   --mockups-desktop-mockup-inner-border: var(--neutral-200);
   --semantic-neutral-950: var(--neutral-950);
   --semantic-brand-950: var(--brand-950);
@@ -385,7 +322,6 @@
   --semantic-fuchsia-950: var(--fuchsia-950);
   --semantic-pink-950: var(--pink-950);
   --semantic-neutral-transparent: var(--base-transparent-white);
-  --base-transparent-black: rgba(0, 0, 0, 0);
 }
 
 :root {
@@ -1479,16 +1415,16 @@
   --neutral-700: #374151;
   --neutral-800: #1f2937;
   --neutral-900: #111827;
-  --brand-50: #eef2ff;
-  --brand-100: #e0e7ff;
-  --brand-200: #c7d2fe;
-  --brand-300: #a5b4fc;
-  --brand-400: #818cf8;
-  --brand-500: #6366f1;
-  --brand-600: #4f46e5;
-  --brand-700: #4338ca;
-  --brand-800: #3730a3;
-  --brand-900: #312e81;
+  --brand-50: #fff;
+  --brand-100: #d0ecff;
+  --brand-200: #a1d9ff;
+  --brand-300: #72c6ff;
+  --brand-400: #42b3ff;
+  --brand-500: #14a0ff;
+  --brand-600: #1086d9;
+  --brand-700: #0c6db3;
+  --brand-800: #08538d;
+  --brand-900: #033a67;
   --success-50: #f0fdf4;
   --success-100: #dcfce7;
   --success-200: #bbf7d0;
@@ -1689,7 +1625,6 @@
   --rose-700: #be123c;
   --rose-800: #9f1239;
   --rose-900: #881337;
-  --base-transparent-white: rgba(255, 255, 255, 0);
 }
 
 .btn {
@@ -1732,6 +1667,7 @@
   font-size: 14px;
 }
 .btn--primary {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   background: var(--buttons-primary-bg-button-primary);
   border: 1px solid var(--buttons-primary-bg-button-primary);
   color: var(--buttons-primary-fg-button-primary);
