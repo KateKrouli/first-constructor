@@ -1,0 +1,185 @@
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all .3s ease;
+
+    &:disabled {
+        cursor: default;
+        pointer-events: none;
+    }
+
+    &--xl {
+        padding: 16px 24px;
+        height: 60px;
+        font-size: 18px;
+    }
+
+    &--l {
+        padding: 12px 20px;
+        height: 48px;
+        font-size: 16px;
+    }
+
+    &--m {
+        padding: 10px 20px;
+        height: 44px;
+        font-size: 16px;
+    }
+
+    &--s {
+        padding: 8px 16px;
+        height: 40px;
+        font-size: 16px;
+    }
+
+    &--xs {
+        padding: 8px 14px;
+        height: 36px;
+        font-size: 14px;
+    }
+
+    &--primary {
+        background: var(--buttons-primary-bg-button-primary);
+        border: 1px solid var(--buttons-primary-bg-button-primary);
+        color: var(--buttons-primary-fg-button-primary);
+
+        &:hover {
+            background: var(--buttons-primary-bg-button-primary-hover);
+            border: 1px solid var(--buttons-primary-bg-button-primary-hover);
+        }
+
+        &:active {
+            background: var(--buttons-primary-bg-button-primary-click);
+            border: 1px solid var(--buttons-primary-bg-button-primary-click);
+        }
+
+        &:disabled {
+            background: var(--buttons-primary-bg-button-primary-disabled);
+            border: 1px solid var(--buttons-primary-bg-button-primary-disabled);
+            color: var(--buttons-primary-fg-button-primary-disabled);
+        }
+    }
+
+    &--secondary {
+        background: var(--buttons-secondary-bg-button-secondary);
+        border: 1px solid var(--buttons-secondary-border-button-secondary);
+        color: var(--buttons-secondary-fg-button-secondary);
+
+        &:hover {
+            background: var(--buttons-secondary-bg-button-secondary-hover);
+            border: 1px solid var(--buttons-secondary-border-button-secondary-hover);
+            color: var(--buttons-secondary-fg-button-secondary-hover);
+        }
+
+        &:active {
+            background: var(--buttons-secondary-bg-button-secondary-click);
+            border: 1px solid var(--buttons-secondary-border-button-secondary-click);
+            color: var(--buttons-secondary-fg-button-secondary-click);
+        }
+
+        &:disabled {
+            background: transparent;
+            border: 1px solid var(--buttons-secondary-border-button-secondary-disabled);
+             color: var(--buttons-secondary-fg-button-secondary-disabled);
+        }
+    }
+
+    &--tertiary {
+        background: var(--background-bg-primary);
+        border: 1px solid var(--buttons-tertiary-border-button-tertiary);
+        color: var(--buttons-tertiary-fg-button-tertiary);
+
+        &:hover {
+            background: var(--buttons-tertiary-bg-button-tertiary-hover);
+            border: 1px solid var(--buttons-tertiary-border-button-tertiary);
+        }
+
+        &:active {
+            background: var(--buttons-tertiary-bg-button-tertiary-click);
+            border: 1px solid var(--buttons-tertiary-border-button-tertiary);
+            color: var(--buttons-tertiary-fg-button-tertiary-click);
+        }
+
+        &:disabled {
+            background: transparent;
+            border: 1px solid var(--buttons-secondary-border-button-secondary-disabled);
+             color: var(--buttons-secondary-fg-button-secondary-disabled);
+        }
+    }
+
+    &--destructive {
+        background: var(--buttons-destructive-primary-bg-button-destructive-primary);
+        border: 1px solid var(--buttons-destructive-primary-bg-button-destructive-primary);
+        color: var(--buttons-destructive-primary-fg-button-destructive-primary);
+
+        &:hover {
+           background: var(--buttons-destructive-primary-bg-button-destructive-primary-hover);
+            border: 1px solid var(--buttons-destructive-primary-bg-button-destructive-primary-hover);
+        }
+
+        &:active {
+            background: var(--buttons-destructive-primary-bg-button-destructive-primary-click);
+             border: 1px solid var(--buttons-destructive-primary-bg-button-destructive-primary-click);
+        }
+
+        &:disabled {
+            background: var(--buttons-destructive-primary-bg-button-destructive-primary-disabled);
+             border: 1px solid var(--buttons-destructive-primary-bg-button-destructive-primary-disabled);
+             color: var(--buttons-destructive-primary-fg-button-destructive-primary-disabled);
+
+        }
+    }
+
+    &--destructive-secondary {
+        background: var(--buttons-destructive-secondary-bg-button-destructive-secondary);
+        border: 1px solid var(--buttons-destructive-secondary-border-button-destructive-secondary);
+        color: var(--buttons-destructive-secondary-fg-button-destructive-secondary);
+   
+        &:hover {
+            background: var(--buttons-destructive-secondary-bg-button-destructive-secondary-hover);
+            border: 1px solid var(--buttons-destructive-primary-bg-button-destructive-primary-hover);
+            color: var(--buttons-destructive-secondary-fg-button-destructive-secondary-hover);
+        }
+
+        &:active {
+            background: var(--buttons-destructive-secondary-bg-button-destructive-secondary-click);
+            border: 1px solid var(--buttons-destructive-secondary-border-button-destructive-secondary-click);
+            color: var(--buttons-destructive-secondary-fg-button-destructive-secondary-click);
+        }
+
+        &:disabled {
+            background: transparent;
+            border: 1px solid var(--buttons-destructive-secondary-border-button-destructive-secondary-disabled);
+            color: var(--buttons-destructive-secondary-fg-button-destructive-secondary-disabled);
+        }
+    }
+
+    &--destructive-tertiary {
+        background: var(--buttons-destructive-tertiary-bg-button-destructive-tertiary);
+        border: 1px solid var(--buttons-destructive-tertiary-border-button-destructive-tertiary);
+        color: var(--buttons-destructive-tertiary-fg-button-destructive-tertiary);
+
+        &:hover {
+            background: var(--buttons-destructive-tertiary-bg-button-destructive-tertiary-hover);
+            border: 1px solid var(--buttons-destructive-tertiary-border-button-destructive-tertiary-hover);
+            color: var(--buttons-destructive-tertiary-fg-button-destructive-tertiary-hover);
+        }
+
+        &:active {
+            background: var(--buttons-destructive-tertiary-bg-button-destructive-tertiary-click);
+            border: 1px solid var(--buttons-destructive-tertiary-fg-button-destructive-tertiary-disabled);
+            color: var(--buttons-destructive-tertiary-fg-button-destructive-tertiary-click);
+        }
+
+        &:disabled {
+            background: transparent;
+            border: 1px solid var(--buttons-destructive-tertiary-border-button-destructive-tertiary-disabled);
+            color: var(--buttons-destructive-tertiary-fg-button-destructive-tertiary-disabled);
+        }
+    }
+}
