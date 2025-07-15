@@ -4,9 +4,10 @@
   "scripts": {
     "watch:scss": "sass --watch src/scss/main.scss:dist/styles.css --style=expanded",
     "watch:js": "esbuild --bundle src/js/main.js --outfile=dist/main.js --watch",
+    "watch:lang": "esbuild --bundle src/js/lang.js --outfile=dist/lang.js --watch",
     "watch:html": "node watch-html.js",
     "serve": "live-server dist --port=5000 --watch=dist",
-    "dev": "npm-run-all --parallel watch:scss watch:js watch:html serve"
+    "dev": "npm-run-all --parallel watch:scss watch:js watch:lang watch:html serve"
   },
   "devDependencies": {
     "sass": "^1.75.0",
