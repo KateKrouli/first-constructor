@@ -1,6 +1,20 @@
 (() => {
   // src/js/lang.js
   var translations = {
+    ar: {
+      header: {
+        title: "\u0645\u0631\u062D\u0628\u064B\u0627 \u0628\u0643\u0645 \u0641\u064A \u0645\u0648\u0642\u0639\u0646\u0627!",
+        menuHome: "\u0627\u0644\u0631\u0626\u064A\u0633\u064A\u0629",
+        menuAbout: "\u0645\u0639\u0644\u0648\u0645\u0627\u062A \u0639\u0646\u0627",
+        menuContact: "\u0627\u062A\u0635\u0644 \u0628\u0646\u0627"
+      },
+      footer: {
+        copyright: "\u062C\u0645\u064A\u0639 \u0627\u0644\u062D\u0642\u0648\u0642 \u0645\u062D\u0641\u0648\u0638\u0629."
+      },
+      main: {
+        greeting: "\u0645\u0631\u062D\u0628\u064B\u0627\u060C \u0623\u064A\u0647\u0627 \u0627\u0644\u0645\u0633\u062A\u062E\u062F\u0645!"
+      }
+    },
     en: {
       header: {
         title: "Welcome to our site!",
@@ -33,6 +47,16 @@
   function setLanguage(lang) {
     localStorage.setItem("lang", lang);
     applyTranslations(lang);
+    setDirection(lang);
+  }
+  function setDirection(lang) {
+    if (lang === "ar") {
+      document.documentElement.dir = "rtl";
+      document.body.style.textAlign = "right";
+    } else {
+      document.documentElement.dir = "ltr";
+      document.body.style.textAlign = "";
+    }
   }
   function getLanguage() {
     return localStorage.getItem("lang") || "ru";
@@ -51,6 +75,7 @@
   function initLangSelect() {
     const lang = getLanguage();
     applyTranslations(lang);
+    setDirection(lang);
     function tryAttach() {
       const langSelect = document.getElementById("lang-select");
       if (langSelect) {

@@ -1,6 +1,20 @@
 // src/js/lang.js
 
 const translations = {
+  ar: {
+    header: {
+      title: "مرحبًا بكم في موقعنا!",
+      menuHome: "الرئيسية",
+      menuAbout: "معلومات عنا",
+      menuContact: "اتصل بنا"
+    },
+    footer: {
+      copyright: "جميع الحقوق محفوظة."
+    },
+    main: {
+      greeting: "مرحبًا، أيها المستخدم!"
+    }
+  },
   en: {
     header: {
       title: "Welcome to our site!",
@@ -31,9 +45,21 @@ const translations = {
   }
 };
 
+
 function setLanguage(lang) {
   localStorage.setItem('lang', lang);
   applyTranslations(lang);
+  setDirection(lang);
+}
+
+function setDirection(lang) {
+  if (lang === 'ar') {
+    document.documentElement.dir = 'rtl';
+    document.body.style.textAlign = 'right';
+  } else {
+    document.documentElement.dir = 'ltr';
+    document.body.style.textAlign = '';
+  }
 }
 
 function getLanguage() {
@@ -58,6 +84,7 @@ function applyTranslations(lang) {
 function initLangSelect() {
   const lang = getLanguage();
   applyTranslations(lang);
+  setDirection(lang);
   function tryAttach() {
     const langSelect = document.getElementById('lang-select');
     if (langSelect) {
@@ -78,4 +105,4 @@ function initLangSelect() {
   }
 }
 
-document.addEventListener('DOMContentLoaded', initLangSelect);
+document.addEventListener('DOMContentLoaded', initLangSelect); 
