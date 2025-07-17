@@ -11,12 +11,38 @@
 
   <main>
     <h1 data-i18n="main.greeting">Привет!</h1>
-    <include src="buttons.html"></include>
+    <div data-lang="ru"><include src="articles-ru.html"></include></div>
+    <div data-lang="en"><include src="articles-en.html"></include></div>
+    <div data-lang="ar"><include src="articles-ar.html"></include></div>
+    <include src="counter.html"></include>
+
+    <details>
+      
+  <summary>Подробнее</summary>
+  <p>Вот что скрывалось внутри!</p>
+</details>
+
+<button popovertarget="hint">Наведи на меня</button>
+
+<div id="hint" popover>
+  Это всплывающая подсказка!
+</div>
+<button onclick="dialog.showModal()">Открыть модалку</button>
+
+<dialog id="dialog">
+  <p>Привет! Я нативное модальное окно :)</p>
+  <button onclick="dialog.close()">Закрыть</button>
+</dialog>
+
+<script>
+  const dialog = document.getElementById('dialog');
+</script>
   </main>
 
-  <include src="footer.html"></include>
+  <include src="footer.html"></include> 
   
   <script src="lang.js"></script>
   <script src="main.js"></script>
+  <!-- showArticlesByLang теперь в main.js -->
 </body>
 </html>

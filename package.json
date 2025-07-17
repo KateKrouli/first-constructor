@@ -7,7 +7,8 @@
     "watch:lang": "esbuild --bundle src/js/lang.js --outfile=dist/lang.js --watch",
     "watch:html": "node watch-html.js",
     "serve": "live-server dist --port=5000 --watch=dist",
-    "dev": "npm-run-all --parallel watch:scss watch:js watch:lang watch:html serve"
+    "copy:images": "cp -r src/images dist/images",
+    "dev": "npm-run-all --parallel watch:scss watch:js watch:lang watch:html serve copy:images"
   },
   "devDependencies": {
     "sass": "^1.75.0",

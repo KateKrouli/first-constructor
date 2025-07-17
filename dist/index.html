@@ -26,47 +26,59 @@
 
   <main>
     <h1 data-i18n="main.greeting">Привет!</h1>
-    <button class="btn btn--primary btn--xl" disabled="">Button</button>
-<button class="btn btn--primary btn--l">Button</button>
-<button class="btn btn--primary btn--m">Button</button>
-<button class="btn btn--primary btn--s">Button</button>
-<button class="btn btn--primary btn--xs">Button</button>
+    <div data-lang="ru"><section class="articles" id="articles-ru">
+  <article>
+    <h2>Заголовок статьи на русском</h2>
+    <p>Текст статьи на русском языке...</p>
+  </article>
+</section>
+</div>
+    <div data-lang="en"><section class="articles" id="articles-en">
+  <article>
+    <h2>Article Title in English</h2>
+    <p>Article text in English...</p>
+  </article>
+</section>
+</div>
+    <div data-lang="ar"><section class="articles" id="articles-ar">
+  <article>
+    <h2>عنوان المقالة بالعربية</h2>
+    <p>نص المقالة باللغة العربية...</p>
+  </article>
+</section>
+</div>
+    <div class="counter-component">
+  <span id="random-counter">0</span>
+</div>
 
-<button class="btn btn--secondary btn--xl" disabled="">Button</button>
-<button class="btn btn--secondary btn--l">Button</button>
-<button class="btn btn--secondary btn--m">Button</button>
-<button class="btn btn--secondary btn--s">Button</button>
-<button class="btn btn--secondary btn--xs">Button</button>
 
-<button class="btn btn--tertiary btn--xl" disabled="">Button</button>
-<button class="btn btn--tertiary btn--l">Button</button>
-<button class="btn btn--tertiary btn--m">Button</button>
-<button class="btn btn--tertiary btn--s">Button</button>
-<button class="btn btn--tertiary btn--xs">Button</button>
+    <details>
+      
+  <summary>Подробнее</summary>
+  <p>Вот что скрывалось внутри!</p>
+</details>
 
-<button class="btn btn--destructive btn--xl" disabled="">Button</button>
-<button class="btn btn--destructive btn--l">Button</button>
-<button class="btn btn--destructive btn--m">Button</button>
-<button class="btn btn--destructive btn--s">Button</button>
-<button class="btn btn--destructive btn--xs">Button</button>
+<button popovertarget="hint">Наведи на меня</button>
 
-<button class="btn btn--destructive-secondary btn--xl" disabled="">Button</button>
-<button class="btn btn--destructive-secondary btn--l">Button</button>
-<button class="btn btn--destructive-secondary btn--m">Button</button>
-<button class="btn btn--destructive-secondary btn--s">Button</button>
-<button class="btn btn--destructive-secondary btn--xs">Button</button>
+<div id="hint" popover="">
+  Это всплывающая подсказка!
+</div>
+<button onclick="dialog.showModal()">Открыть модалку</button>
 
-<button class="btn btn--destructive-tertiary btn--xl" disabled="">Button</button>
-<button class="btn btn--destructive-tertiary btn--l">Button</button>
-<button class="btn btn--destructive-tertiary btn--m">Button</button>
-<button class="btn btn--destructive-tertiary btn--s">Button</button>
-<button class="btn btn--destructive-tertiary btn--xs">Button</button>
+<dialog id="dialog">
+  <p>Привет! Я нативное модальное окно :)</p>
+  <button onclick="dialog.close()">Закрыть</button>
+</dialog>
 
+<script>
+  const dialog = document.getElementById('dialog');
+</script>
   </main>
 
-  <footer><p data-i18n="footer.copyright">&copy; 2025</p></footer>
+  <footer><p data-i18n="footer.copyright">&copy; 2025</p></footer> 
   
   <script src="lang.js"></script>
   <script src="main.js"></script>
+  <!-- showArticlesByLang теперь в main.js -->
 </body>
 </html>
