@@ -1,0 +1,40 @@
+header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 64px;
+    gap: 72px;
+
+    &__nav {
+      display: flex;
+      align-items: center;
+      margin-left: auto;
+
+      ul {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        gap: 24px;
+
+        li {
+          a {
+            color: var(--semantic-neutral-600);
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 1.3;
+
+            &:hover {
+              color: var(--semantic-neutral-800);
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -8,15 +8,18 @@
     "watch:html": "node watch-html.js",
     "serve": "live-server dist --port=5000 --watch=dist",
     "copy:images": "cp -r src/images dist/images",
-    "dev": "npm-run-all --parallel watch:scss watch:js watch:lang watch:html serve copy:images"
+    "copy:components": "cp -r src/components dist/components",
+    "build": "esbuild src/js/main.js --bundle --outfile=dist/main.js && esbuild src/js/lang.js --bundle --outfile=dist/lang.js && npx posthtml src/index.html -o dist/index.html && cp -r src/scss dist/scss && npm run copy:images && npm run copy:components",
+    "dev": "npm-run-all --parallel watch:scss watch:js watch:lang watch:html serve copy:images copy:components"
   },
   "devDependencies": {
-    "sass": "^1.75.0",
+    "chokidar": "^3.5.3",
     "esbuild": "^0.18.0",
-    "posthtml": "^0.16.6",
-    "posthtml-include": "^1.7.4",
     "live-server": "^1.2.2",
     "npm-run-all": "^4.1.5",
-    "chokidar": "^3.5.3"
+    "posthtml": "^0.16.6",
+    "posthtml-cli": "^0.10.0",
+    "posthtml-include": "^1.7.4",
+    "sass": "^1.75.0"
   }
 }

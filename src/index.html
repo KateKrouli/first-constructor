@@ -8,35 +8,16 @@
 <body>
   <include src="header.html"></include>
 
-
+ 
   <main>
+      <include src="main-block.html"></include>
+
     <h1 data-i18n="main.greeting">Привет!</h1>
-    <div data-lang="ru"><include src="articles-ru.html"></include></div>
-    <div data-lang="en"><include src="articles-en.html"></include></div>
-    <div data-lang="ar"><include src="articles-ar.html"></include></div>
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.10.32/build/spline-viewer.js"></script>
+    <spline-viewer url="https://prod.spline.design/Ljf4M4PGDpu9XoD8/scene.splinecode"></spline-viewer>
     <include src="counter.html"></include>
+ 
 
-    <details>
-      
-  <summary>Подробнее</summary>
-  <p>Вот что скрывалось внутри!</p>
-</details>
-
-<button popovertarget="hint">Наведи на меня</button>
-
-<div id="hint" popover>
-  Это всплывающая подсказка!
-</div>
-<button onclick="dialog.showModal()">Открыть модалку</button>
-
-<dialog id="dialog">
-  <p>Привет! Я нативное модальное окно :)</p>
-  <button onclick="dialog.close()">Закрыть</button>
-</dialog>
-
-<script>
-  const dialog = document.getElementById('dialog');
-</script>
   </main>
 
   <include src="footer.html"></include> 

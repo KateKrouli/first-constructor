@@ -1,20 +1,6 @@
 // src/js/lang.js
 
 const translations = {
-  ar: {
-    header: {
-      title: "مرحبًا بكم في موقعنا!",
-      menuHome: "الرئيسية",
-      menuAbout: "معلومات عنا",
-      menuContact: "اتصل بنا"
-    },
-    footer: {
-      copyright: "جميع الحقوق محفوظة."
-    },
-    main: {
-      greeting: "مرحبًا، أيها المستخدم!"
-    }
-  },
   en: {
     header: {
       title: "Welcome to our site!",
@@ -25,25 +11,30 @@ const translations = {
     footer: {
       copyright: "All rights reserved."
     },
-    main: {
-      greeting: "Hello, user!"
-    }
+   main: {
+        greeting: "Hello, user!", 
+        erroreSpan: "Test",
+        erroreSpan2: "Test"
+      }
   },
-  ru: {
+  tr: {
     header: {
-      title: "Добро пожаловать на наш сайт!",
-      menuHome: "Главная",
-      menuAbout: "О нас",
-      menuContact: "Контакты"
+      title: "Sitemize hoş geldiniz!",
+      menuHome: "Ana Sayfa",
+      menuAbout: "Hakkımızda",
+      menuContact: "İletişim"
     },
     footer: {
-      copyright: "Все права защищены."
+      copyright: "Tüm hakları saklıdır."
     },
     main: {
-      greeting: "Привет, пользователь!"
-    }
+        greeting: "", 
+        erroreSpan: "Engellendi",
+        erroreSpan2: "BTK kararına göre hizmete erişim kısıtlandı."
+      }
   }
 };
+
 
 
 function setLanguage(lang) {
@@ -52,18 +43,15 @@ function setLanguage(lang) {
   setDirection(lang);
 }
 
+
 function setDirection(lang) {
-  if (lang === 'ar') {
-    document.documentElement.dir = 'rtl';
-    document.body.style.textAlign = 'right';
-  } else {
-    document.documentElement.dir = 'ltr';
-    document.body.style.textAlign = '';
-  }
+  document.documentElement.dir = 'ltr';
+  document.body.style.textAlign = '';
 }
 
+
 function getLanguage() {
-  return localStorage.getItem('lang') || 'ru';
+  return localStorage.getItem('lang') || 'en';
 }
 
 function applyTranslations(lang) {
@@ -78,31 +66,18 @@ function applyTranslations(lang) {
   document.querySelector('[data-i18n="footer.copyright"]').textContent = t.footer.copyright;
   // Main
   document.querySelector('[data-i18n="main.greeting"]').textContent = t.main.greeting;
-}
+  const erroreSpan = document.querySelector('[data-i18n="main.erroreSpan"]');
+  if (erroreSpan) erroreSpan.textContent = t.main.erroreSpan;
+  const erroreSpan2 = document.querySelector('[data-i18n="main.erroreSpan2"]');
+  if (erroreSpan2) erroreSpan2.textContent = t.main.erroreSpan2;
+} 
 
 
-function initLangSelect() {
+document.addEventListener('DOMContentLoaded', function() {
   const lang = getLanguage();
   applyTranslations(lang);
   setDirection(lang);
-  function tryAttach() {
-    const langSelect = document.getElementById('lang-select');
-    if (langSelect) {
-      langSelect.value = lang;
-      langSelect.addEventListener('change', (e) => {
-        setLanguage(e.target.value);
-      });
-      return true;
-    }
-    return false;
-  }
-  if (!tryAttach()) {
-    // Если select еще не в DOM, ждем его появления
-    const observer = new MutationObserver(() => {
-      if (tryAttach()) observer.disconnect();
-    });
-    observer.observe(document.body, { childList: true, subtree: true });
-  }
-}
+});
 
-document.addEventListener('DOMContentLoaded', initLangSelect); 
+// Экспортируем функцию для глобального доступа (кастомный дропдаун)
+window.setLanguage = setLanguage;
