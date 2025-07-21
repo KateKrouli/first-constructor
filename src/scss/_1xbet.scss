@@ -1,0 +1,70 @@
+.xbet-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+    height: 100vh; 
+    background-image: url("data:image/svg+xml;utf8,<svg width='1440' height='947' viewBox='0 0 1440 947' fill='none' xmlns='http://www.w3.org/2000/svg'><rect width='1440' height='960' transform='translate(0 -7)' fill='url(%23paint0_radial_23016_4645)' fill-opacity='0.12'/><defs><radialGradient id='paint0_radial_23016_4645' cx='0' cy='0' r='1' gradientUnits='userSpaceOnUse' gradientTransform='translate(720 479.988) rotate(90) scale(297.512 720)'><stop stop-color='%2314A0FF'/><stop offset='1' stop-color='%2314A0FF' stop-opacity='0'/></radialGradient></defs></svg>");
+
+    &__title {
+        font-weight: 500;
+        font-size: 48px;
+        line-height: 125%;
+        letter-spacing: -0.04em;
+        text-align: center;
+        color: var(--text-heading-primary);
+        max-width: 500px;
+    }
+
+    &__description {
+        font-size: 18px;
+        line-height: 156%;
+        text-align: center;
+        color: var(--text-body);
+        max-width: 540px;   
+    }
+
+
+  &__images {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-template-rows: repeat(2, auto);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    height: 384px;
+    align-items: center;
+    justify-items: center;
+
+    .image1 { grid-area: 1 / 1 / 2 / 2; }
+    .image2 { grid-area: 2 / 1 / 3 / 2; }
+    .image3 { grid-area: 1 / 2 / 3 / 3; }
+    .image4 {
+      grid-area: 1 / 3 / 3 / 4;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+    .image5 { grid-area: 1 / 4 / 3 / 5; }
+    .image6 { grid-area: 1 / 5 / 2 / 6; }
+    .image7 { grid-area: 2 / 5 / 3 / 6; }
+  }
+
+  &__sponsors {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+    margin-top: 4%;
+  }
+}

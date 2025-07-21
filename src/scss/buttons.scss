@@ -17,6 +17,7 @@
         padding: 16px 24px;
         height: 60px;
         font-size: 18px;
+        gap: 20px;
     }
 
     &--l {
@@ -44,7 +45,6 @@
     }
 
     &--primary {
-        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
         background: var(--buttons-primary-bg-button-primary);
         border: 1px solid var(--buttons-primary-bg-button-primary);
         color: var(--buttons-primary-fg-button-primary);
@@ -67,20 +67,20 @@
     }
 
     &--secondary {
-        background: var(--buttons-secondary-bg-button-secondary);
-        border: 1px solid var(--buttons-secondary-border-button-secondary);
-        color: var(--buttons-secondary-fg-button-secondary);
+        background: var(--semantic-brand-100);
+        border: 1px solid var(--semantic-brand-100);
+        color: var(--semantic-brand-500);
 
         &:hover {
-            background: var(--buttons-secondary-bg-button-secondary-hover);
-            border: 1px solid var(--buttons-secondary-border-button-secondary-hover);
-            color: var(--buttons-secondary-fg-button-secondary-hover);
+            background: var(--semantic-brand-100);
+            border: 1px solid var(--semantic-brand-600);
+            color: var(--semantic-brand-600);
         }
 
         &:active {
             background: var(--buttons-secondary-bg-button-secondary-click);
-            border: 1px solid var(--buttons-secondary-border-button-secondary-click);
-            color: var(--buttons-secondary-fg-button-secondary-click);
+            border: 1px solid var(--semantic-brand-700);
+            color: var(--semantic-brand-700);
         }
 
         &:disabled {
@@ -181,6 +181,21 @@
             background: transparent;
             border: 1px solid var(--buttons-destructive-tertiary-border-button-destructive-tertiary-disabled);
             color: var(--buttons-destructive-tertiary-fg-button-destructive-tertiary-disabled);
+        }
+    }
+
+    &--arrow {
+        background: var(--semantic-sky-50);
+        border: 1px solid var(--semantic-sky-50);
+
+        &:after {
+            content: '';
+            display: inline-block;
+            width: 24px;
+            height: 25px;
+            margin-left: 8px;
+            background: url("data:image/svg+xml;utf8,<svg width='24' height='25' viewBox='0 0 24 25' fill='none' xmlns='http://www.w3.org/2000/svg'><rect width='24' height='24' transform='translate(0 0.712891)' fill='white' fill-opacity='0.05'/><rect y='0.712891' width='24' height='24' fill='white' fill-opacity='0.05'/><path d='M10 8.71289L14 12.7129L10 16.7129M22 12.7129C22 18.2357 17.5228 22.7129 12 22.7129C6.47715 22.7129 2 18.2357 2 12.7129C2 7.19004 6.47715 2.71289 12 2.71289C17.5228 2.71289 22 7.19004 22 12.7129Z' stroke='%231086D9' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/></svg>") no-repeat center/contain;
+            vertical-align: middle;
         }
     }
 }
