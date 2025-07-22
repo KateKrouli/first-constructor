@@ -88,7 +88,7 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  background: #fff;
+  background: transparent;
   border: none;
   border-radius: 6px;
   padding: 6px 14px 6px 8px;
@@ -201,22 +201,37 @@ document.addEventListener('DOMContentLoaded', function() {
 
  
   <main>
-      <div class="main-block main-width">
-    <div class="main-block__errore">
-        <span data-i18n="main.erroreSpan" class="main-block__errore-span">Engellendi</span>
-        <span data-i18n="main.erroreSpan2">BTK kararına göre hizmete erişim kısıtlandı.</span>
-        </div>
-    <h1 data-i18n="main.greeting" class="main-block__title"><span>Site engellendi,</span> ama kuponun güvende</h1>
-    <p data-i18n="main.description" class="main-block__description">This is the main content area.</p>
-    <div class="main-block__button">
-        <a href="#" class="btn btn--primary btn--xl" data-i18n="main.button">Bonusu Al</a>
-        <span class="main-block__bonus" data-i18n="main.bonus">+100 ₺ bonus</span>
-        </div>
-    <div class="main-block__spline">
-        <script type="module" src="https://unpkg.com/@splinetool/viewer@1.10.32/build/spline-viewer.js"></script>
-        <spline-viewer url="https://prod.spline.design/Ljf4M4PGDpu9XoD8/scene.splinecode"></spline-viewer>
-        </div>
-</div> 
+      <section class="main">
+    <div class="main-block main-width">
+        <div class="main-block__errore">
+            <span data-i18n="main.erroreSpan" class="main-block__errore-span">Engellendi</span>
+            <span data-i18n="main.erroreSpan2">BTK kararına göre hizmete erişim kısıtlandı.</span>
+            </div>
+        <h1 data-i18n="main.greeting" class="main-block__title"><span>Site engellendi,</span> ama kuponun güvende</h1>
+        <div class="main-description">
+<p data-i18n="main.description" class="main-block__description">This is the main content area.</p>
+<div class="main-block__button">
+    <a href="#" class="btn btn--primary btn--xl" data-i18n="main.button">Bonusu Al</a>
+    <span class="main-block__bonus" data-i18n="main.bonus">+100 ₺ bonus</span>
+</div>
+</div>
+
+<style>
+.main-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+    margin: 0 auto;
+}
+</style</style>
+        <div class="main-block__spline">
+            <script type="module" src="https://unpkg.com/@splinetool/viewer@1.10.32/build/spline-viewer.js"></script>
+            <spline-viewer url="https://prod.spline.design/Ljf4M4PGDpu9XoD8/scene.splinecode"></spline-viewer>
+            </div>
+    </div> 
+</section>
       <div class="xbet-block main-width">
     <div class="xbet-block__title" data-i18n="xbet.title">Güçlü Markayla Güçlü Ortaklıklar</div>
     <div class="xbet-block__description" data-i18n="xbet.description">1xBet, dünya çapında tanınan kulüplerin, sporcuların ve teknoloji markalarının güvenilir sponsoru ve iş ortağıdır.</div>
@@ -347,22 +362,207 @@ document.addEventListener('DOMContentLoaded', () => {
 </script>
 
     <a href="#" class="btn btn--secondary btn--xl btn--arrow" data-i18n="secondary.button">Bahis Yap</a>
+
+<style>
+    .btn--arrow:after {
+            content: '';
+            display: inline-block;
+            width: 24px;
+            height: 25px;
+            margin-left: 8px;
+            background: url("data:image/svg+xml;utf8,<svg width='24' height='25' viewBox='0 0 24 25' fill='none' xmlns='http://www.w3.org/2000/svg'><rect width='24' height='24' transform='translate(0 0.712891)' fill='white' fill-opacity='0.05'/><rect y='0.712891' width='24' height='24' fill='white' fill-opacity='0.05'/><path d='M10 8.71289L14 12.7129L10 16.7129M22 12.7129C22 18.2357 17.5228 22.7129 12 22.7129C6.47715 22.7129 2 18.2357 2 12.7129C2 7.19004 6.47715 2.71289 12 2.71289C17.5228 2.71289 22 7.19004 22 12.7129Z' stroke='%231086D9' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/></svg>") no-repeat center/contain;
+            vertical-align: middle;
+   }
+</style>
 </div>
       <section class="infographics">
     <div class="infographics-block main-width">
         <div class="infographics-block__title">
             <div data-i18n="infographics.title">Hızlı, Kolay, Güvenli — kazanmanız için hazırız</div>
             <a href="#" class="btn btn--secondary btn--xl btn--arrow" data-i18n="secondary.button">Bahis Yap</a>
+
+<style>
+    .btn--arrow:after {
+            content: '';
+            display: inline-block;
+            width: 24px;
+            height: 25px;
+            margin-left: 8px;
+            background: url("data:image/svg+xml;utf8,<svg width='24' height='25' viewBox='0 0 24 25' fill='none' xmlns='http://www.w3.org/2000/svg'><rect width='24' height='24' transform='translate(0 0.712891)' fill='white' fill-opacity='0.05'/><rect y='0.712891' width='24' height='24' fill='white' fill-opacity='0.05'/><path d='M10 8.71289L14 12.7129L10 16.7129M22 12.7129C22 18.2357 17.5228 22.7129 12 22.7129C6.47715 22.7129 2 18.2357 2 12.7129C2 7.19004 6.47715 2.71289 12 2.71289C17.5228 2.71289 22 7.19004 22 12.7129Z' stroke='%231086D9' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/></svg>") no-repeat center/contain;
+            vertical-align: middle;
+   }
+</style>
         </div>
        <div class="infographics-block__list">
-        
+            <div class="infographics-block__item">
+                <img src="images/infographic1.png" alt="">
+                <div class="infographics-block__item-title" data-i18n="infographics.item1">Hızlı</div>
+                <div class="infographics-block__item-description" data-i18n="infographics.desc1">Bahis kuponunuzu 3 tıkta oluşturun. Canlı oranlar milisaniyeler içinde güncellenir; sayfalar < 1 sn’de açılır.</div>
+            </div>
+            <div class="infographics-block__item">
+                <img src="images/infographic2.png" alt="">
+                <div class="infographics-block__item-title" data-i18n="infographics.item2">Kolay</div>
+                <div class="infographics-block__item-description" data-i18n="infographics.desc2">60+ ödeme yöntemi, anında TL yatırma / çekme. Binlerce maç ve marketi akıllı filtrelerle saniyeler içinde bulun.</div>
+            </div>
+            <div class="infographics-block__item">
+                <img src="images/infographic3.png" alt="">
+                <div class="infographics-block__item-title" data-i18n="infographics.item3">Güvenli</div>
+                <div class="infographics-block__item-description" data-i18n="infographics.desc3">Curaçao lisanslı sertifikalı bahis sitesi. 256-bit SSL, bağımsız denetimler ve sorumlu oyun politikasıyla verileriniz </div>
+            </div>
         </div>
+        <div class="infographics__images">
+            <img src="images/infographic-image1.png" alt="">
+            <img src="images/infographic-image2.png" alt="">
+            <img src="images/infographic-image3.png" alt="">
+            <img src="images/infographic-image4.png" alt="">
+            <img src="images/infographic-image5.png" alt="">
+        </div>
+    
+        <div class="main-description">
+<p data-i18n="main.description" class="main-block__description">This is the main content area.</p>
+<div class="main-block__button">
+    <a href="#" class="btn btn--primary btn--xl" data-i18n="main.button">Bonusu Al</a>
+    <span class="main-block__bonus" data-i18n="main.bonus">+100 ₺ bonus</span>
+</div>
+</div>
+
+<style>
+.main-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+    margin: 0 auto;
+}
+</style</style> 
     </div>
 </section>
-    
-    
- 
+      <section class="banners">
+    <div class="banners__title main-width">
+        <div data-i18n="banners.title">Kazanmaya Şimdi Başla!</div>
+        <a href="#" class="btn btn--secondary btn--xl btn--arrow" data-i18n="secondary.button">Bahis Yap</a>
 
+<style>
+    .btn--arrow:after {
+            content: '';
+            display: inline-block;
+            width: 24px;
+            height: 25px;
+            margin-left: 8px;
+            background: url("data:image/svg+xml;utf8,<svg width='24' height='25' viewBox='0 0 24 25' fill='none' xmlns='http://www.w3.org/2000/svg'><rect width='24' height='24' transform='translate(0 0.712891)' fill='white' fill-opacity='0.05'/><rect y='0.712891' width='24' height='24' fill='white' fill-opacity='0.05'/><path d='M10 8.71289L14 12.7129L10 16.7129M22 12.7129C22 18.2357 17.5228 22.7129 12 22.7129C6.47715 22.7129 2 18.2357 2 12.7129C2 7.19004 6.47715 2.71289 12 2.71289C17.5228 2.71289 22 7.19004 22 12.7129Z' stroke='%231086D9' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/></svg>") no-repeat center/contain;
+            vertical-align: middle;
+   }
+</style>
+    </div>
+    <div class="banners__list swiper">
+        <div class="swiper-wrapper">
+            <div class="banners__item swiper-slide">
+                <a href="">
+                    <img src="images/banner1.png" alt="">
+                </a>
+            </div> 
+            <div class="banners__item swiper-slide">
+                <a href="">
+                    <img src="images/banner2.png" alt="">
+                </a>
+            </div>
+            <div class="banners__item swiper-slide">
+                <a href="">
+                    <img src="images/banner2.png" alt="">
+                </a>
+            </div>
+            <div class="banners__item swiper-slide">
+                <a href="">
+                    <img src="images/banner2.png" alt="">
+                </a>
+            </div>
+            <div class="banners__item swiper-slide">
+                <a href="">
+                    <img src="images/banner2.png" alt="">
+                </a>
+            </div>
+        </div>
+        </div>
+    
+    <!-- Swiper CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      new Swiper('.banners__list.swiper', {
+        slidesPerView: 'auto',
+        loop: true,
+        spaceBetween: 40,
+        autoplay: {
+          delay: 3500,
+          disableOnInteraction: false,
+        },
+        speed: 600,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+      });
+      alignBannersSlider();
+      window.addEventListener('resize', alignBannersSlider);
+    });
+    </script>
+</section>  
+     <div class="faq-block main-width">
+    <div class="faq-block__info">
+        <div class="faq-block__title" data-i18n="faq.title">Frequently asked questions</div>
+        <div class="faq-block__description" data-i18n="faq.description">For any unanswered questions, reach out to our support team via email. We'll respond as soon as possible to assist you.</div>
+    </div>
+    <div class="faq-block__list">
+        <div class="faq-block__item">
+            <details>
+                <summary data-i18n="faq.question1">What are your payment methods?</summary>
+                <p data-i18n="faq.answer1">If you created a new account after or while ordering you can edit both addresses (for billing and shipping) in your customer account.</p>
+            </details>
+        </div>
+    </div>
+</div> 
+     <div class="subscribe-form main-width">
+    <div class="subscribe-form__content">
+        <div class="subscribe-form__title" data-i18n="subscribe.title">Subscribe to our newsletter for insider access!</div>
+        <div class="subscribe-form__description" data-i18n="subscribe.description">Join our community and never miss out on exciting opportunities.</div>
+        <form class="subscribe-form__form">
+            <input type="email" placeholder="Enter your email" required="">
+            <button type="submit" class="btn btn--primary btn--l" data-i18n="subscribe.button">Subscribe</button>
+        </form>
+        <div class="subscribe-form__privacy" data-i18n="subscribe.privacy">We care about your data. Read our privacy policy.</div>
+        </div>
+        <div class="subscribe-form__image">
+            <img src="images/subscribe-image.png" alt="Subscribe Image">
+        </div>
+    </div>
+  
+      <div class="articles-block main-width">
+    <div class="articles-block__title">
+        <div data-i18n="articles.title">Güncel Haberler ve Rehberler</div>
+        <a href="#" class="btn btn--secondary btn--xl btn--arrow" data-i18n="secondary.button">Bahis Yap</a>
+
+<style>
+    .btn--arrow:after {
+            content: '';
+            display: inline-block;
+            width: 24px;
+            height: 25px;
+            margin-left: 8px;
+            background: url("data:image/svg+xml;utf8,<svg width='24' height='25' viewBox='0 0 24 25' fill='none' xmlns='http://www.w3.org/2000/svg'><rect width='24' height='24' transform='translate(0 0.712891)' fill='white' fill-opacity='0.05'/><rect y='0.712891' width='24' height='24' fill='white' fill-opacity='0.05'/><path d='M10 8.71289L14 12.7129L10 16.7129M22 12.7129C22 18.2357 17.5228 22.7129 12 22.7129C6.47715 22.7129 2 18.2357 2 12.7129C2 7.19004 6.47715 2.71289 12 2.71289C17.5228 2.71289 22 7.19004 22 12.7129Z' stroke='%231086D9' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/></svg>") no-repeat center/contain;
+            vertical-align: middle;
+   }
+</style>
+    </div>
+    <div class="articles-block__list">
+        <div class="article-card">
+            <div class="article-card__title" data-i18n="articles.card.title">Makale Başlığı</div>
+            <div class="article-card__excerpt" data-i18n="articles.card.excerpt">Makale özeti burada yer alacak.</div>
+            <a href="#" class="article-card__link" data-i18n="articles.card.link">Devamını Oku</a>
+        </div>
+    </div>
+</div>
   </main>
 
   <footer><p data-i18n="footer.copyright">&copy; 2025</p></footer> 

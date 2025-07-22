@@ -53,6 +53,7 @@ input:focus::placeholder, textarea:focus::placeholder, select:focus::placeholder
 }
 
 input[type=number] {
+  appearance: textfield;
   -moz-appearance: textfield;
 }
 
@@ -88,3 +89,10 @@ p {
 
 @import 'infographics';
 
+@import 'banners';
+
+@import 'faq';
+
+@import 'subscribe-form';
+
+@import 'articles';

@@ -1,0 +1,21 @@
+.articles-block {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    height: 100vh;
+
+    &__title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        div {
+        font-weight: 500;
+        font-size: 48px;
+        line-height: 125%;
+        letter-spacing: -0.04em;
+        color: var(--text-heading-primary);
+        }
+    }
+}

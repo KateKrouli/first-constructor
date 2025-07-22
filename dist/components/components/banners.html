@@ -1,0 +1,59 @@
+<section class="banners">
+    <div class="banners__title main-width">
+        <div data-i18n="banners.title">Kazanmaya Şimdi Başla!</div>
+        <include src="button.html"></include>
+    </div>
+    <div class="banners__list swiper">
+        <div class="swiper-wrapper">
+            <div class="banners__item swiper-slide">
+                <a href="">
+                    <img src="images/banner1.png" alt="" />
+                </a>
+            </div> 
+            <div class="banners__item swiper-slide">
+                <a href="">
+                    <img src="images/banner2.png" alt="" />
+                </a>
+            </div>
+            <div class="banners__item swiper-slide">
+                <a href="">
+                    <img src="images/banner2.png" alt="" />
+                </a>
+            </div>
+            <div class="banners__item swiper-slide">
+                <a href="">
+                    <img src="images/banner2.png" alt="" />
+                </a>
+            </div>
+            <div class="banners__item swiper-slide">
+                <a href="">
+                    <img src="images/banner2.png" alt="" />
+                </a>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- Swiper CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      new Swiper('.banners__list.swiper', {
+        slidesPerView: 'auto',
+        loop: true,
+        spaceBetween: 40,
+        autoplay: {
+          delay: 3500,
+          disableOnInteraction: false,
+        },
+        speed: 600,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+      });
+      alignBannersSlider();
+      window.addEventListener('resize', alignBannersSlider);
+    });
+    </script>
+</section> 
