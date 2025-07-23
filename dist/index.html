@@ -556,16 +556,52 @@ document.addEventListener('DOMContentLoaded', () => {
 </style>
     </div>
     <div class="articles-block__list">
-        <div class="article-card">
-            <div class="article-card__title" data-i18n="articles.card.title">Makale Başlığı</div>
-            <div class="article-card__excerpt" data-i18n="articles.card.excerpt">Makale özeti burada yer alacak.</div>
-            <a href="#" class="article-card__link" data-i18n="articles.card.link">Devamını Oku</a>
+        <div class="article-card article-card--main">
+            <div class="article-card__image" style="background-image: url('images/article1.jpg');">
+            </div>
+            <div class="article-card__content">
+                <div class="article-card__title" data-i18n="articles.card.title">Makale Başlığı</div>
+                <div class="article-card__excerpt" data-i18n="articles.card.excerpt">Makale özeti burada yer alacak. Makale özeti burada yer alacak. Makale özeti burada yer alacak. Makale özeti burada yer alacak. Makale özeti burada yer alacak.</div>
+                <a href="#" class="btn btn--m btn--clear article-card__link" data-i18n="articles.card.link">Devamını Oku</a>
+            </div>
+        </div>
+        <div class="article-card article-card">
+            <div class="article-card__image" style="background-image: url('images/article1.jpg');">
+            </div>
+            <div class="article-card__content">
+                <div class="article-card__title" data-i18n="articles.card.title">Makale Başlığı</div>
+                <div class="article-card__excerpt" data-i18n="articles.card.excerpt">Makale özeti burada yer alacak.</div>
+                <a href="#" class="btn btn--m btn--clear article-card__link" data-i18n="articles.card.link">Devamını Oku</a>
+            </div>
+        </div>
+        <div class="article-card article-card">
+            <div class="article-card__image" style="background-image: url('images/article1.jpg');">
+            </div>
+            <div class="article-card__content">
+                <div class="article-card__title" data-i18n="articles.card.title">Makale Başlığı</div>
+                <div class="article-card__excerpt" data-i18n="articles.card.excerpt">Makale özeti burada yer alacak.</div>
+                <a href="#" class="btn btn--m btn--clear article-card__link" data-i18n="articles.card.link">Devamını Oku</a>
+            </div> 
         </div>
     </div>
+    <div class="articles-block__more">
+        <a class="btn btn--m btn--tertiary articles-block__more" href="#" data-i18n="articles.all">View all posts</a>
+    </div> 
 </div>
   </main>
 
-  <footer><p data-i18n="footer.copyright">&copy; 2025</p></footer> 
+  <footer>
+    <div class="footer main-width">
+        <nav class="footer__nav">
+            <ul>
+                <li><a href="#" data-i18n="footer.menuPrivacy">Gizlilik Politikası</a></li>
+                <li><a href="#" data-i18n="footer.menuTerms">Kullanım Şartları</a></li>
+                <li><a href="#" data-i18n="footer.menuContact">İletişim</a></li>
+            </ul>
+        </nav>
+        <p data-i18n="footer.copyright">&copy; 2025</p>
+    </div>
+</footer>  
   
   <script src="lang.js"></script>
   <script src="main.js"></script>

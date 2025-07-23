@@ -92,24 +92,42 @@
 
     &--tertiary {
         background: var(--background-bg-primary);
-        border: 1px solid var(--buttons-tertiary-border-button-tertiary);
-        color: var(--buttons-tertiary-fg-button-tertiary);
+        border: 1px solid var(--semantic-neutral-200);
+        color: var(--semantic-neutral-700);
 
         &:hover {
-            background: var(--buttons-tertiary-bg-button-tertiary-hover);
-            border: 1px solid var(--buttons-tertiary-border-button-tertiary);
+            color: var(--semantic-neutral-800);
+            border: 1px solid var(--semantic-neutral-800);
         }
 
         &:active {
-            background: var(--buttons-tertiary-bg-button-tertiary-click);
-            border: 1px solid var(--buttons-tertiary-border-button-tertiary);
-            color: var(--buttons-tertiary-fg-button-tertiary-click);
+            background: var(--semantic-neutral-50);
+            border: 1px solid var(--semantic-neutral-900);
+            color: var(--semantic-neutral-900);
         }
 
         &:disabled {
             background: transparent;
             border: 1px solid var(--buttons-secondary-border-button-secondary-disabled);
              color: var(--buttons-secondary-fg-button-secondary-disabled);
+        }
+    }
+
+    &--clear {
+        background: transparent;
+        border: none;
+        color: var(--semantic-brand-500);
+
+        &:hover {
+            color: var(--semantic-brand-600);
+        }
+
+        &:active {
+            color: var(--semantic-brand-700);
+        }
+
+        &:disabled {
+            color: var(--semantic-neutral-300);
         }
     }
 
