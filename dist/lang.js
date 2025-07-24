@@ -61,7 +61,7 @@
         button: "Bonusu Al",
         bonus: "+100 \u20BA bonus",
         erroreSpan: "Engellendi",
-        erroreSpan2: "BTK karar\u0131na g\xF6re hizmete eri\u015Fim k\u0131s\u0131tland\u0131."
+        erroreSpan2: "BTK karar\u0131na g\xF6re hizmete eri\u015Fim"
       },
       xbet: {
         title: "G\xFC\xE7l\xFC Markayla G\xFC\xE7l\xFC Ortakl\u0131klar",

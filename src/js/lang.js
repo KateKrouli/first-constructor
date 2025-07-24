@@ -61,7 +61,7 @@ const translations = {
         button: "Bonusu Al",
         bonus: "+100 ₺ bonus",
         erroreSpan: "Engellendi",
-        erroreSpan2: "BTK kararına göre hizmete erişim kısıtlandı."
+        erroreSpan2: "BTK kararına göre hizmete erişim"
       },
     xbet: {
       title: "Güçlü Markayla Güçlü Ortaklıklar",
