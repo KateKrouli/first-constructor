@@ -77,6 +77,19 @@ p {
   margin: 0 auto;
 } 
 
+.h2 {
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 125%;
+  letter-spacing: -0.04em;
+  color: var(--text-heading-primary);
+
+  @media (max-width: 767px) { 
+    font-size: 30px;
+    line-height: 127%;
+  }
+}
+
 @import 'header';
 
 @import 'brand';
