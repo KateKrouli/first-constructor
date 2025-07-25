@@ -672,25 +672,40 @@ document.addEventListener('DOMContentLoaded', () => {
         </div>
     </div>
 </div> 
-     <div class="subscribe-form main-width">
+     <div class="main-width">
+  <div class="subscribe-form">
     <div class="subscribe-form__content">
-        <div class="subscribe-form__title" data-i18n="subscribe.title">Subscribe to our newsletter for insider access!</div>
-        <div class="subscribe-form__description" data-i18n="subscribe.description">Join our community and never miss out on exciting opportunities.</div>
-        <form class="subscribe-form__form">
-            <input type="email" placeholder="Enter your email" required="">
-            <button type="submit" class="btn btn--primary btn--l" data-i18n="subscribe.button">Subscribe</button>
-        </form>
-        <div class="subscribe-form__privacy" data-i18n="subscribe.privacy">We care about your data. Read our privacy policy.</div>
+      <div class="subscribe-form__title" data-i18n="subscribe.title">
+        Subscribe to our newsletter for insider access!
+      </div>
+      <div class="subscribe-form__description" data-i18n="subscribe.description">
+        Join our community and never miss out on exciting opportunities.
+      </div>
+      <form class="subscribe-form__form">
+        <div>
+          <input type="email" placeholder="Enter your email" required="">
+          <div class="subscribe-form__privacy" data-i18n="subscribe.privacy">
+            We care about your data. Read our privacy policy.
+          </div>
         </div>
-        <div class="subscribe-form__image">
-            <img src="images/subscribe-image.png" alt="Subscribe Image">
-        </div>
+        <button type="submit" class="btn btn--primary btn--l" data-i18n="subscribe.button">
+          Subscribe
+        </button>
+      </form>
+
+      <div class="subscribe-form__image">
+        <img src="images/subscribe-image.png" alt="Subscribe Image">
+      </div>
     </div>
+  </div>
+</div>
   
       <div class="articles-block main-width">
-    <div class="articles-block__title">
-        <div data-i18n="articles.title">Güncel Haberler ve Rehberler</div>
-        <a href="#" class="btn btn--secondary btn--xl btn--arrow" data-i18n="secondary.button">Bahis Yap</a>
+  <div class="articles-block__title">
+    <div data-i18n="articles.title" class="h2">
+      Güncel Haberler ve Rehberler
+    </div>
+    <a href="#" class="btn btn--secondary btn--xl btn--arrow" data-i18n="secondary.button">Bahis Yap</a>
 
 <style>
  @media (max-width: 767px) { 
@@ -712,40 +727,52 @@ document.addEventListener('DOMContentLoaded', () => {
             
    }
 </style>
+  </div>
+  <div class="articles-block__list">
+    <div class="article-card article-card--main">
+      <div class="article-card__image" style="background-image: url('images/article1.jpg')"></div>
+      <div class="article-card__content">
+        <div class="article-card__title" data-i18n="articles.card.title">
+          Makale Başlığı
+        </div>
+        <div class="article-card__excerpt" data-i18n="articles.card.excerpt">
+          Makale özeti burada yer alacak. Makale özeti burada yer alacak. Makale
+          özeti burada yer alacak. Makale özeti burada yer alacak. Makale özeti
+          burada yer alacak.
+        </div>
+        <a href="#" class="btn btn--m btn--clear article-card__link" data-i18n="articles.card.link">Devamını Oku</a>
+      </div>
     </div>
-    <div class="articles-block__list">
-        <div class="article-card article-card--main">
-            <div class="article-card__image" style="background-image: url('images/article1.jpg');">
-            </div>
-            <div class="article-card__content">
-                <div class="article-card__title" data-i18n="articles.card.title">Makale Başlığı</div>
-                <div class="article-card__excerpt" data-i18n="articles.card.excerpt">Makale özeti burada yer alacak. Makale özeti burada yer alacak. Makale özeti burada yer alacak. Makale özeti burada yer alacak. Makale özeti burada yer alacak.</div>
-                <a href="#" class="btn btn--m btn--clear article-card__link" data-i18n="articles.card.link">Devamını Oku</a>
-            </div>
+    <div class="article-card article-card">
+      <div class="article-card__image" style="background-image: url('images/article1.jpg')"></div>
+      <div class="article-card__content">
+        <div class="article-card__title" data-i18n="articles.card.title">
+          Makale Başlığı
         </div>
-        <div class="article-card article-card">
-            <div class="article-card__image" style="background-image: url('images/article1.jpg');">
-            </div>
-            <div class="article-card__content">
-                <div class="article-card__title" data-i18n="articles.card.title">Makale Başlığı</div>
-                <div class="article-card__excerpt" data-i18n="articles.card.excerpt">Makale özeti burada yer alacak.</div>
-                <a href="#" class="btn btn--m btn--clear article-card__link" data-i18n="articles.card.link">Devamını Oku</a>
-            </div>
+        <div class="article-card__excerpt" data-i18n="articles.card.excerpt">
+          Makale özeti burada yer alacak.
         </div>
-        <div class="article-card article-card">
-            <div class="article-card__image" style="background-image: url('images/article1.jpg');">
-            </div>
-            <div class="article-card__content">
-                <div class="article-card__title" data-i18n="articles.card.title">Makale Başlığı</div>
-                <div class="article-card__excerpt" data-i18n="articles.card.excerpt">Makale özeti burada yer alacak.</div>
-                <a href="#" class="btn btn--m btn--clear article-card__link" data-i18n="articles.card.link">Devamını Oku</a>
-            </div> 
-        </div>
+        <a href="#" class="btn btn--m btn--clear article-card__link" data-i18n="articles.card.link">Devamını Oku</a>
+      </div>
     </div>
-    <div class="articles-block__more">
-        <a class="btn btn--m btn--tertiary articles-block__more" href="#" data-i18n="articles.all">View all posts</a>
-    </div> 
+    <div class="article-card article-card">
+      <div class="article-card__image" style="background-image: url('images/article1.jpg')"></div>
+      <div class="article-card__content">
+        <div class="article-card__title" data-i18n="articles.card.title">
+          Makale Başlığı
+        </div>
+        <div class="article-card__excerpt" data-i18n="articles.card.excerpt">
+          Makale özeti burada yer alacak.
+        </div>
+        <a href="#" class="btn btn--m btn--clear article-card__link" data-i18n="articles.card.link">Devamını Oku</a>
+      </div>
+    </div>
+  </div>
+  <div class="articles-block__more">
+    <a class="btn btn--m btn--tertiary articles-block__more" href="#" data-i18n="articles.all">View all posts</a>
+  </div>
 </div>
+
   </main>
 
   <footer>
