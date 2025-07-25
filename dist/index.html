@@ -277,7 +277,6 @@ document.addEventListener('DOMContentLoaded', function() {
   </div>
 </header>
 
-
 <script>
 document.addEventListener('DOMContentLoaded', function() {
   const mobileBtn = document.querySelector('.header__mobile-btn');
@@ -327,7 +326,7 @@ document.addEventListener('DOMContentLoaded', function() {
     </div> 
 </section>
       <div class="xbet-block main-width">
-    <div class="xbet-block__title" data-i18n="xbet.title">Güçlü Markayla Güçlü Ortaklıklar</div>
+    <div class="xbet-block__title h2" data-i18n="xbet.title">Güçlü Markayla Güçlü Ortaklıklar</div>
     <div class="xbet-block__description" data-i18n="xbet.description">1xBet, dünya çapında tanınan kulüplerin, sporcuların ve teknoloji markalarının güvenilir sponsoru ve iş ortağıdır.</div>
     <div class="xbet-block__images">
         <div class="image1"><img src="images/image1.png" alt=""></div>
@@ -348,7 +347,7 @@ document.addEventListener('DOMContentLoaded', function() {
 </div>
       <div class="players">   
     <div class="digits-block main-width">
-        <div class="digits-block__title">
+        <div class="digits-block__title h2">
             <div data-i18n="players.title">Top Türkiye oyuncuları</div>
             <div class="digits-block__count"><div class="counter-component">
   <span id="random-counter">0</span>
@@ -455,9 +454,17 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 </script>
 
-    <a href="#" class="btn btn--secondary btn--xl btn--arrow" data-i18n="secondary.button">Bahis Yap</a>
+    <div class="main-width">
+        <a href="#" class="btn btn--secondary btn--xl btn--arrow" data-i18n="secondary.button">Bahis Yap</a>
 
 <style>
+ @media (max-width: 767px) { 
+             .btn--arrow { 
+                    width:100%;
+             }
+
+    }
+
     .btn--arrow:after {
             content: '';
             display: inline-block;
@@ -466,16 +473,26 @@ document.addEventListener('DOMContentLoaded', () => {
             margin-left: 8px;
             background: url("data:image/svg+xml;utf8,<svg width='24' height='25' viewBox='0 0 24 25' fill='none' xmlns='http://www.w3.org/2000/svg'><rect width='24' height='24' transform='translate(0 0.712891)' fill='white' fill-opacity='0.05'/><rect y='0.712891' width='24' height='24' fill='white' fill-opacity='0.05'/><path d='M10 8.71289L14 12.7129L10 16.7129M22 12.7129C22 18.2357 17.5228 22.7129 12 22.7129C6.47715 22.7129 2 18.2357 2 12.7129C2 7.19004 6.47715 2.71289 12 2.71289C17.5228 2.71289 22 7.19004 22 12.7129Z' stroke='%231086D9' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/></svg>") no-repeat center/contain;
             vertical-align: middle;
+
+            
    }
 </style>
+    </div>
 </div>
       <section class="infographics">
     <div class="infographics-block main-width">
         <div class="infographics-block__title">
-            <div data-i18n="infographics.title">Hızlı, Kolay, Güvenli — kazanmanız için hazırız</div>
+            <div data-i18n="infographics.title" class="h2">Hızlı, Kolay, Güvenli — kazanmanız için hazırız</div>
             <a href="#" class="btn btn--secondary btn--xl btn--arrow" data-i18n="secondary.button">Bahis Yap</a>
 
 <style>
+ @media (max-width: 767px) { 
+             .btn--arrow { 
+                    width:100%;
+             }
+
+    }
+
     .btn--arrow:after {
             content: '';
             display: inline-block;
@@ -484,6 +501,8 @@ document.addEventListener('DOMContentLoaded', () => {
             margin-left: 8px;
             background: url("data:image/svg+xml;utf8,<svg width='24' height='25' viewBox='0 0 24 25' fill='none' xmlns='http://www.w3.org/2000/svg'><rect width='24' height='24' transform='translate(0 0.712891)' fill='white' fill-opacity='0.05'/><rect y='0.712891' width='24' height='24' fill='white' fill-opacity='0.05'/><path d='M10 8.71289L14 12.7129L10 16.7129M22 12.7129C22 18.2357 17.5228 22.7129 12 22.7129C6.47715 22.7129 2 18.2357 2 12.7129C2 7.19004 6.47715 2.71289 12 2.71289C17.5228 2.71289 22 7.19004 22 12.7129Z' stroke='%231086D9' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/></svg>") no-repeat center/contain;
             vertical-align: middle;
+
+            
    }
 </style>
         </div>
@@ -504,40 +523,21 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div class="infographics-block__item-description" data-i18n="infographics.desc3">Curaçao lisanslı sertifikalı bahis sitesi. 256-bit SSL, bağımsız denetimler ve sorumlu oyun politikasıyla verileriniz </div>
             </div>
         </div>
-        <div class="infographics__images">
-            <img src="images/infographic-image1.png" alt="">
-            <img src="images/infographic-image2.png" alt="">
-            <img src="images/infographic-image3.png" alt="">
-            <img src="images/infographic-image4.png" alt="">
-            <img src="images/infographic-image5.png" alt="">
-        </div>
-    
-        <div class="main-description">
-<p data-i18n="main.description" class="main-block__description">This is the main content area.</p>
-<div class="main-block__button">
-    <a href="#" class="btn btn--primary btn--xl" data-i18n="main.button">Bonusu Al</a>
-    <span class="main-block__bonus" data-i18n="main.bonus">+100 ₺ bonus</span>
-</div>
-</div>
-
-<style>
-.main-description {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    text-align: center;
-    margin: 0 auto;
-}
-</style</style> 
     </div>
 </section>
       <section class="banners">
     <div class="banners__title main-width">
-        <div data-i18n="banners.title">Kazanmaya Şimdi Başla!</div>
+        <div data-i18n="banners.title" class="h2">Kazanmaya Şimdi Başla!</div>
         <a href="#" class="btn btn--secondary btn--xl btn--arrow" data-i18n="secondary.button">Bahis Yap</a>
 
 <style>
+ @media (max-width: 767px) { 
+             .btn--arrow { 
+                    width:100%;
+             }
+
+    }
+
     .btn--arrow:after {
             content: '';
             display: inline-block;
@@ -546,6 +546,8 @@ document.addEventListener('DOMContentLoaded', () => {
             margin-left: 8px;
             background: url("data:image/svg+xml;utf8,<svg width='24' height='25' viewBox='0 0 24 25' fill='none' xmlns='http://www.w3.org/2000/svg'><rect width='24' height='24' transform='translate(0 0.712891)' fill='white' fill-opacity='0.05'/><rect y='0.712891' width='24' height='24' fill='white' fill-opacity='0.05'/><path d='M10 8.71289L14 12.7129L10 16.7129M22 12.7129C22 18.2357 17.5228 22.7129 12 22.7129C6.47715 22.7129 2 18.2357 2 12.7129C2 7.19004 6.47715 2.71289 12 2.71289C17.5228 2.71289 22 7.19004 22 12.7129Z' stroke='%231086D9' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/></svg>") no-repeat center/contain;
             vertical-align: middle;
+
+            
    }
 </style>
     </div>
@@ -580,11 +582,7 @@ document.addEventListener('DOMContentLoaded', () => {
       .banners__scroll::-webkit-scrollbar {
         display: none; /* Chrome, Safari */
       }
-      .banners__list {
-        display: flex;
-        gap: 40px;
-        min-width: 800px;
-      }
+  
       .banners__item img {
         width: 100%;
         height: 100%;
@@ -662,7 +660,7 @@ document.addEventListener('DOMContentLoaded', () => {
 </section>  
      <div class="faq-block main-width">
     <div class="faq-block__info">
-        <div class="faq-block__title" data-i18n="faq.title">Frequently asked questions</div>
+        <div class="faq-block__title h2" data-i18n="faq.title">Frequently asked questions</div>
         <div class="faq-block__description" data-i18n="faq.description">For any unanswered questions, reach out to our support team via email. We'll respond as soon as possible to assist you.</div>
     </div>
     <div class="faq-block__list">
@@ -695,6 +693,13 @@ document.addEventListener('DOMContentLoaded', () => {
         <a href="#" class="btn btn--secondary btn--xl btn--arrow" data-i18n="secondary.button">Bahis Yap</a>
 
 <style>
+ @media (max-width: 767px) { 
+             .btn--arrow { 
+                    width:100%;
+             }
+
+    }
+
     .btn--arrow:after {
             content: '';
             display: inline-block;
@@ -703,6 +708,8 @@ document.addEventListener('DOMContentLoaded', () => {
             margin-left: 8px;
             background: url("data:image/svg+xml;utf8,<svg width='24' height='25' viewBox='0 0 24 25' fill='none' xmlns='http://www.w3.org/2000/svg'><rect width='24' height='24' transform='translate(0 0.712891)' fill='white' fill-opacity='0.05'/><rect y='0.712891' width='24' height='24' fill='white' fill-opacity='0.05'/><path d='M10 8.71289L14 12.7129L10 16.7129M22 12.7129C22 18.2357 17.5228 22.7129 12 22.7129C6.47715 22.7129 2 18.2357 2 12.7129C2 7.19004 6.47715 2.71289 12 2.71289C17.5228 2.71289 22 7.19004 22 12.7129Z' stroke='%231086D9' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/></svg>") no-repeat center/contain;
             vertical-align: middle;
+
+            
    }
 </style>
     </div>

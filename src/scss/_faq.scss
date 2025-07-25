@@ -5,19 +5,18 @@
     padding-top: 140px;
     padding-bottom: 140px;
 
+    @media (max-width: 767px) {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        flex-direction: column;
+        align-items: center;
+    }
+
     &__info {
         display: flex;
         flex-direction: column;
         max-width: 500px;
         gap: 8px;
-    }
-
-    &__title {
-        font-weight: 500;
-        font-size: 48px;
-        line-height: 125%;
-        letter-spacing: -0.04em;
-        color: var(--text-heading-primary);
     }
 
     &__description {
@@ -32,6 +31,11 @@
         gap: 24px;
         width: 100%;
         max-width: 590px;
+
+         @media (max-width: 767px) { 
+            margin-top: 24px;
+            max-width: 100%;
+         }
     }
 
     &__item {
@@ -46,6 +50,12 @@
             position: relative;
             list-style: none;
 
+             @media (max-width: 767px) { 
+                padding: 24px 16px;
+                font-size: 18px;
+                line-height: 156%;
+             }
+
             &::marker {
                 display: none;
             }
@@ -59,6 +69,10 @@
                 height: 25px;
                 background: url('data:image/svg+xml;utf8,<svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="24" height="24" transform="translate(0 0.112793)" fill="white" fill-opacity="0.05"/><path d="M12 5.11279V19.1128M5 12.1128H19" stroke="%2364788C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>') no-repeat center/contain;
                 transition: background-image 0.2s;
+
+                @media (max-width: 767px) { 
+                    right: 16px;
+                }
             }
         }
         details[open] summary::after {
@@ -74,6 +88,13 @@
             opacity: 0;
             overflow: hidden;
             transition: max-height 0.4s cubic-bezier(.4,0,.2,1), opacity 0.3s;
+            
+            @media (max-width: 767px) { 
+                    padding: 0 16px 24px;
+                    font-size: 16px;
+                    line-height: 150%;
+                }
+        
         }
         details[open] p {
             max-height: 500px;
